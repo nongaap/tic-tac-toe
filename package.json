@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/nongaap/tic-tac-toe/issues"
   },
-  "homepage": "https://github.com/nongaap/tic-tac-toe#readme"
+  "homepage": "https://github.com/nongaap/tic-tac-toe#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }
