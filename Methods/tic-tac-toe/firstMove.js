@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 firstMove function returns the position (assuming the tic-tac-toe board is numbered 0-8) a player should take for their first move.
@@ -20,6 +20,6 @@ function firstMove(position){
 
 	return move;
 
-};
+}
 
 module.exports = firstMove;
