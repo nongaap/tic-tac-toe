@@ -7,18 +7,8 @@ If an argument is passed, the function assumes it is making the secomd move in t
 */
 
 function firstMove(position){
-	let move = 0;
 
-	switch(position) {
-		case 0: case 2: case 6: case 8:
-			move = 4;
-			break;
-		case 5: case 7:
-			move = 8;
-			break;
-	}
-
-	return move;
+	return position === 4 || position === undefined ? 0 : 4
 
 }
 
