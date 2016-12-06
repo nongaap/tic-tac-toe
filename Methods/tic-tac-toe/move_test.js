@@ -162,4 +162,8 @@ describe('move function test', function() {
     expect(move(['','','','','O','X','','X',''])).to.equal(2);
   });
 
+  it('Returns 3 as last move', function() {
+    expect(move(['X','O','X','','O','O','O','X','X'])).to.equal(3);
+  });
+
 });

@@ -90,4 +90,42 @@ describe('incrementalMove function test', function() {
     expect(incrementalMove(['','','','','O','X','','X',''])).to.equal(2);
   });
 
+  //
+  it('Returns 4 Returns 4 as optimal move', function() {
+    expect(incrementalMove(['X','O','','X','','','O','',''])).to.equal(4);
+  });
+
+  it('Returns 4 as optimal move', function() {
+    expect(incrementalMove(['X','','O','X','','','O','',''])).to.equal(4);
+  });
+
+  it('Returns 4 as optimal move', function() {
+    expect(incrementalMove(['X','X','O','O','','','','',''])).to.equal(4);
+  });
+
+  it('Returns 6 as optimal move', function() {
+    expect(incrementalMove(['X','X','O','','O','','','',''])).to.equal(6);
+  });
+
+  it('Returns 2 as optimal move', function() {
+    expect(incrementalMove(['X','','','','X','O','','','O'])).to.equal(2);
+  });
+
+  it('Returns 4 as optimal move', function() {
+    expect(incrementalMove(['X','X','O','','','','O','',''])).to.equal(4);
+  });
+
+  it('Returns 4 as optimal move', function() {
+    expect(incrementalMove(['X','O','X','','','','','O',''])).to.equal(4);
+  });
+
+  it('Returns 6 as optimal move', function() {
+    expect(incrementalMove(['X','O','X','','','','','','O'])).to.equal(6);
+  });
+
+  it('Returns 3 as last move', function() {
+    expect(incrementalMove(['X','O','X','','O','O','O','X','X'])).to.equal(3);
+  });
+
+
 });

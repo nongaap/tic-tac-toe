@@ -19,18 +19,12 @@ function move(board){
 			return secondMove(board);
 			break;
 		case 3:
-			return incrementalMove(board);
-			break;
 		case 4:
-			break;
 		case 5:
-			break;
 		case 6:
-			break;
 		case 7:
-			break;
 		case 8:
-			return board.indexOf('');
+			return incrementalMove(board);
 			break;
 	}
 

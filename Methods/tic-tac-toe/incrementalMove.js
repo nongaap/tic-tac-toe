@@ -34,11 +34,14 @@ function incrementalMove(board){
 			if(board[5] === 'X' && board[7] === 'X') return 2;
 			break;
 		case 4:
-			
+			if(board[1] === 'O' && board[6] === 'O') return 4;
+			if(board[2] === 'O' && board[3] === 'O') return 4;
+			if(board[1] === 'O' && board[8] === 'O') return 6;
 			break;
+		default:
+			return board.indexOf('');
 	}
 
 }
-
 
 module.exports = incrementalMove;
