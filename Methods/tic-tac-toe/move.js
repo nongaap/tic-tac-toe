@@ -2,6 +2,7 @@
 
 const gameCounter = require('./gameCounter');
 const firstMove = require('./firstMove');
+const secondMove = require('./secondMove');
 
 /*
 move function accepts tic-tac-toe array as a parameter and returns index position for the next move.
@@ -14,6 +15,7 @@ function move(board){
 			return firstMove(board);
 			break;
 		case 2:
+			return secondMove(board);
 			break;
 		case 3:
 			break;
