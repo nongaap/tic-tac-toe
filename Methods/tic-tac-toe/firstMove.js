@@ -5,9 +5,9 @@ firstMove function returns the position (assuming the tic-tac-toe board is numbe
 If an empty board is passed in, the function assumes it is making the first move in the game.
 */
 
-function firstMove(position){
+function firstMove(board){
 
-	return position.indexOf('X') === 4 || position.indexOf('X') === -1 ? 0 : 4
+	return board.indexOf('X') === 4 || board.indexOf('X') === -1 ? 0 : 4
 
 }
 
