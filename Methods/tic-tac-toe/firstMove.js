@@ -12,5 +12,3 @@ function firstMove(position){
 }
 
 module.exports = firstMove;
-
-console.log(firstMove(['','','','','','','','','']));
