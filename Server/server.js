@@ -24,7 +24,7 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
-var api = require('./routes/api');
+var api = require('./Routes/api');
 
 var port = 3000;
 
