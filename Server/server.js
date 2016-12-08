@@ -35,6 +35,7 @@ var server = app.listen(port, function() {
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname,'../Public')));
 
 app.use(cookieParser());
 
@@ -43,7 +44,8 @@ app.use(bodyParser.json());
 app.use('/api', api);
 
 app.get('/', function (req, res) {
-	res.status(200).send('Hi. Tic Tac Toe Homepage');
+	//res.status(200).send('Hi. Tic Tac Toe Homepage');
+  res.sendFile(path.join(__dirname,'../Public','tic-tac-toe.html'));
 });
 
 app.all('*', function (req, res) {
