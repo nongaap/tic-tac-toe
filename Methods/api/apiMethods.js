@@ -1,7 +1,8 @@
 "use strict";
 
 const unbeatableTicTacToe = require('../tic-tac-toe/unbeatableTicTacToe');
-const winner = require('../tic-tac-toe/winner');
+const gameWinner = require('../tic-tac-toe/winner');
+const move = require('../tic-tac-toe/move');
 
 function ticTacToe(req,res) {
 	let input = JSON.parse(req.body.board);
@@ -9,6 +10,20 @@ function ticTacToe(req,res) {
   res.json({board : output});
 }
 
+function winner(req,res) {
+	let input = JSON.parse(req.body.board);
+	let output = gameWinner(input);
+  res.json({winner : output});
+}
+
+function nextMove(req,res) {
+	let input = JSON.parse(req.body.board);
+	let output = move(input);
+  res.json({nextMove : output});
+}
+
 module.exports = {
-	ticTacToe
+	ticTacToe,
+	winner,
+	nextMove
 };
