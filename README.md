@@ -1,12 +1,21 @@
-# Tic-Ta-Toe
-Tic-Tac-Toe is a tic-tac-toe game built on top of Node.js. Players can interact with the game by making API post requests to the server and the game will return a tic-tac-toe board with the computer's move.
+# Tic-Tac-Toe Game
+Tic-Tac-Toe is a tic-tac-toe game built on top of Node.js.
+
+To play the game:
+
+- Download the files, navigate to tic-tac-toe folder in terminal, and npm install & start the server
+- Visit http://localhost:3000/
+
+
+# Tic-Tac-Toe API
+Players can also interact with the game by making API post requests to the server and the game will return a tic-tac-toe board with the computer's move.
 
 To get started:
 
 - Download the files, navigate to tic-tac-toe folder in terminal, and npm install & start the server
 - Play against the computer by sending post requests to http://localhost:3000/api
 
-#### Board Format
+#### API Board Format
 
 - An empty Tic-Tac-Toe board is represented as an array with 9 empty strings: ["","","","","","","","",""]
 - Top left position of the tic-tac-toe board is represented by position 0 in the array.
@@ -30,3 +39,5 @@ To play a game, send a post request to  http://localhost:3000/api with 'board' a
 The server will respond with a board that includes the computers move:
 - Example Post Request: {'board': '["X","","","","","","","",""]'}
 - Subsequent Response: {'board': '["X","","","","O","","","",""]'}
+
+Additionally, a post request can be made to http://localhost:3000/api/move using the same format and the server will respond with the optimal next move to make (respresented as the index position in the board array).
