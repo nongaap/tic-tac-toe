@@ -31,7 +31,7 @@
 	margin: 0px
 }
 
-.progress {
+.outcome {
 	width: 300px;
 	text-align: center;
 	vertical-align: middle;
@@ -49,4 +49,8 @@
 .newGame h2 {
 	margin: 0px;
 	margin-top: 10px;
+}
+
+#X {
+	background-color: lightblue;
 }
