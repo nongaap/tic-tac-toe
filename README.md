@@ -1,7 +1,7 @@
 # Tic-Tac-Toe Game
 Tic-Tac-Toe is a tic-tac-toe game built on top of Node.js.
 
-Heroku deployed Tic-Tac-Toe: https://pacific-fortress-36755.herokuapp.com
+Heroku deployed Tic-Tac-Toe (Currently on free tier and loading may be delayed): https://pacific-fortress-36755.herokuapp.com
 
 To play the game locally:
 
