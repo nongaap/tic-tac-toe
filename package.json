@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --watch server ./Server/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./Methods/tic-tac-toe/currentTurn_test.js ./Methods/tic-tac-toe/winningMove_test.js ./Methods/tic-tac-toe/gameCounter_test.js ./Methods/tic-tac-toe/winningCombo_test.js ./Methods/tic-tac-toe/firstMove_test.js ./Methods/tic-tac-toe/secondMove_test.js ./Methods/tic-tac-toe/addBoard_test.js ./Methods/tic-tac-toe/incrementalMove_test.js ./Methods/tic-tac-toe/winner_test.js ./Methods/tic-tac-toe/move_test.js ./Methods/tic-tac-toe/unbeatableTicTacToe_test.js ./Methods/api/apiMethods_test.js"
   },
   "repository": {
     "type": "git",
